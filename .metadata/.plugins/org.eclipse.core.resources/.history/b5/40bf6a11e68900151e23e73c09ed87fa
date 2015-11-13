@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.view" METAMODEL="MVC" NUMBER="2"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCENARIO NAME="View" VISIBILITY="public" META_OBJECT="Model" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.model" META_OBJECT="View" CATEGORY="default" NAME="uiViewInterface" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.model" META_OBJECT="View" CATEGORY="default" NAME="uiControlerInterface" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.model" META_OBJECT="View" CATEGORY="default" NAME="uiView" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="uiControlerInterface" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.controler;
+
+public interface I[[rawName]]Controler {
+	
+	public void initView();
+	
+[[IactionsDeclaration]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="uiControlerInterface$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/controler/I[[rawName]]Controler.java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>
