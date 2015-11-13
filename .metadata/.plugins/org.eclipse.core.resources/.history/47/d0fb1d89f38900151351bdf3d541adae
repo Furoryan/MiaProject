@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
+   
+   <extension point="com.mia.studio.generation.core.generation_package">
+      <package file="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.model.pkg"/>
+   </extension>
+   <extension point="com.mia.studio.generation.core.generation_package">
+      <package file="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.view.pkg"/>
+   </extension>
+   <extension point="com.mia.studio.generation.core.generation_package">
+      <package file="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.view.impl.pkg"/>
+   </extension>
+   <extension point="com.mia.studio.generation.core.generation_package">
+      <package file="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.model.impl.pkg"/>
+   </extension>
+   <extension point="com.mia.studio.generation.core.generation_package">
+      <package file="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.controler.pkg"/>
+   </extension>
+</plugin>

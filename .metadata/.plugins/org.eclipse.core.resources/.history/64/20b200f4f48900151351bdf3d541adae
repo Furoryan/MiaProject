@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniprojet.mvc2java.generation.model.impl" METAMODEL="MVC" NUMBER="2"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCRIPT NAME="Implementation" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.model.impl;
+
+import com.mia.banque.model.*;
+
+[[import_java_util_List]]
+[[import_java_util_ArrayList]]
+
+public class [[name]] implements I[[name]] {
+[[propertiesDeclaration]]
+[[ownedElementsDeclaration]]
+
+[[ownedElements.accessors]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Implementation$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/model/impl/[[name]].java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

@@ -1,0 +1,45 @@
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.IOperationControler;
+import com.mia.banque.ui.view.IOperationView;
+import com.mia.banque.model.IOperation;
+import com.mia.banque.model.impl.Operation;
+
+public class OperationView extends Shell implements IOperationView {
+	private IOperationControler controler;
+	private IOperation model;
+	
+	public OperationView(Display d, IOperationControler ctrl, IOperation mdl){
+		super(d);
+		this.controler = ctrl;
+		this.model = mdl;
+		this.createContents();
+	}
+	
+	private Button quitterButton;
+	
+	public void quitter(){
+		this.controler.quitter();
+	}
+
+
+	private void createContents(){
+		this.quitterButton = new Button(this, SWT.PUSH);
+		this.quitterButton.setText("quitter");
+		this.quitterButton.addListener(SWT.Selection, new Listener() {
+      		public void handleEvent(Event e) {
+        		switch (e.type) {
+        			case SWT.Selection:
+          				quitter();
+          				break;
+ 				   }
+			  }
+ 		   });
+
+	}
+}

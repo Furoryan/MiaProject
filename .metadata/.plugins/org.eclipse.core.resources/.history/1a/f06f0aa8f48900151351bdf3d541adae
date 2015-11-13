@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniprojet.mvc2java.generation.view.impl" METAMODEL="MVC" NUMBER="6"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCRIPT NAME="createButton" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+		this.[[name]]Button = new Button(this, SWT.PUSH);
+		this.[[name]]Button.setText("[[name]]");
+		this.[[name]]Button.addListener(SWT.Selection, new Listener() {
+      		public void handleEvent(Event e) {
+        		switch (e.type) {
+        			case SWT.Selection:
+          				[[name]]();
+          				break;
+ 				   }
+			  }
+ 		});
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="methodDeclaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	private Button [[name]]Button;
+	
+	public void [[name]](){
+		this.controler.[[name]]();
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="actionsDeclaration1" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+[[actions.methodDeclaration]]
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="actionsDeclaration1$Precondition" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getActions().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<SCRIPT NAME="uiView" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.I[[rawName]]Controler;
+import com.mia.banque.ui.view.I[[name]];
+import com.mia.banque.model.I[[rawName]];
+import com.mia.banque.model.impl.[[rawName]];
+
+public class [[name]] extends Shell implements I[[name]] {
+	private I[[rawName]]Controler controler;
+	private I[[rawName]] model;
+	
+	public [[name]](Display d, I[[rawName]]Controler ctrl, I[[rawName]] mdl){
+		super(d);
+		this.controler = ctrl;
+		this.model = mdl;
+		this.createContents();
+	}
+	
+[[actionsDeclaration]]
+
+	private void createContents(){
+[[actions.createButton]]
+	}
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="uiView$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/view/swt/[[name]].java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

@@ -5,7 +5,7 @@ import com.mia.banque.model.*;
 import java.util.List;
 import java.util.ArrayList;
 
-class Compte implements ICompte {
+public class Compte implements ICompte {
 	protected String Numero;
 
 	public String getNumero(){

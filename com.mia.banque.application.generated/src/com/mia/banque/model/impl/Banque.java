@@ -5,7 +5,7 @@ import com.mia.banque.model.*;
 import java.util.List;
 import java.util.ArrayList;
 
-class Banque implements IBanque {
+public class Banque implements IBanque {
 
 	protected List<IClient> listClient;
 

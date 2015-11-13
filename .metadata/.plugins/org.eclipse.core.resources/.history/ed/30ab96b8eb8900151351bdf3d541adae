@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniprojet.mvc2java.generation.model" METAMODEL="MVC" NUMBER="18"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCENARIO NAME="Model" VISIBILITY="public" META_OBJECT="Model" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="Model"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.model" META_OBJECT="Model" CATEGORY="default" NAME="Interface" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.model" META_OBJECT="Model" CATEGORY="default" NAME="Implementation" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="Ideclaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void [[name]]();
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="declaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void [[name]](){
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="Iaccessors" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	public List<I[[name@¤] get[[name]]s();
+	public void set[[name]]s(List<I[[name@¤] newValue);
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="Implementation" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.model.impl;
+
+import com.mia.banque.model.*;
+
+[[import_java_util_List]]
+[[import_java_util_ArrayList]]
+
+class [[name]] implements I[[name]] {
+[[propertiesDeclaration]]
+[[ownedElementsDeclaration]]
+
+[[ownedElements.accessors]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Implementation$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/model/impl/[[name]].java
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="Interface" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.model;
+
+[[import_java_util_List]]
+
+public interface I[[name]] {
+[[properties.IaccessorsGetSet]]
+[[ownedElements.Iaccessors]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Interface$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/model/I[[name]].java
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="accessors" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	public List<I[[name@¤] get[[name]]s(){
+		if (this.list[[name]] == null){
+			this.list[[name]] = new ArrayList<I[[name@¤]();
+		}
+		return this.list[[name]];
+	}
+	public void set[[name]]s(List<I[[name@¤] newValue){
+		this.list[[name]] = newValue;
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="import_java_util_ArrayList" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+import java.util.ArrayList;
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="import_java_util_List" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+import java.util.List;
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="ownedElementDeclaration" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	protected List<I[[name@¤] list[[name]];
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="ownedElementsDeclaration" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+[[ownedElements.ownedElementDeclaration]]
+
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="ownedElementsDeclaration$Precondition" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getOwnedElements().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<SCRIPT NAME="propertiesDeclaration" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+[[properties.declaration]]
+[[properties.accessorsGetSet]]
+
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="propertiesDeclaration$Precondition" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getProperties().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<SCRIPT NAME="IaccessorsGetSet" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	public String get[[name]]();
+	public void set[[name]](String newValue);
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="accessorsGetSet" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	public String get[[name]](){
+		return this.[[name]];
+	}
+	public void set[[name]](String newValue){
+		this.[[name]] = newValue;
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="declaration" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	protected String [[name]];
+
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

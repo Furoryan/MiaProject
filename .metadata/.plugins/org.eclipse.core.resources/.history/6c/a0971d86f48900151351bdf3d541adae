@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.view" METAMODEL="MVC" NUMBER="7"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCENARIO NAME="View" VISIBILITY="public" META_OBJECT="View" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.view" META_OBJECT="View" CATEGORY="default" NAME="uiViewInterface" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="createButton" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+		this.[[name]]Button = new Button(this, SWT.PUSH);
+		this.[[name]]Button.setText("[[name]]");
+		this.[[name]]Button.addListener(SWT.Selection, new Listener() {
+      		public void handleEvent(Event e) {
+        		switch (e.type) {
+        			case SWT.Selection:
+          				[[name]]();
+          				break;
+ 				   }
+			  }
+ 		});
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="methodDeclaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	private Button [[name]]Button;
+	
+	public void [[name]](){
+		this.controler.[[name]]();
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="actionsDeclaration" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+[[actions.methodDeclaration]]
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="actionsDeclaration$Precondition" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getActions().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<TEXT_MACRO NAME="rawName" META_OBJECT="View" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+return current.getName().replace("View", "");
+]]></TEXT>
+	</TEXT_MACRO>
+	<SCRIPT NAME="uiViewInterface" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.view;
+
+public interface I[[name]]{
+[[IactionsDeclaration]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="uiViewInterface$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/view/I[[name]].java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

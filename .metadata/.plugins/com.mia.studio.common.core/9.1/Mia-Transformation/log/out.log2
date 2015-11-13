@@ -1,0 +1,9 @@
+[Transformation License information] 13/11/15 09:53 Previous used configuration : Architect Enterprise.
+Connecting to license manager...
+[Transformation License information] 13/11/15 09:53 Connected to license manager : BLM
+[Transformation License information] 13/11/15 09:53 Testing availability for feature named "MIA_TRANS_ARCHITECT" : available
+[Transformation License information] 13/11/15 09:53 Testing availability for feature named "MIA_TRANS_DEVELOPER" : available
+[Transformation License information] 13/11/15 09:53 Retrieving licenses information from : /home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/licenses/license.dat
+[Transformation License information] 13/11/15 09:53 Obtained feature : MIA_TRANS_ARCHITECT
+[Transformation License information] 13/11/15 09:53 Feature provided by : /home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/licenses/license.dat
+[Transformation License information] 13/11/15 09:53 Current configuration : ARCHITECT ENTERPRISE

@@ -1,0 +1,59 @@
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.IBanqueControler;
+import com.mia.banque.ui.view.IBanqueView;
+import com.mia.banque.model.IBanque;
+import com.mia.banque.model.impl.Banque;
+
+public class BanqueView extends Shell implements IBanqueView {
+	private IBanqueControler controler;
+	private IBanque model;
+	
+	public BanqueView(Display d, IBanqueControler ctrl, IBanque mdl){
+		super(d);
+		this.controler = ctrl;
+		this.model = mdl;
+		this.createContents();
+	}
+	
+	private Button afficherClientButton;
+	
+	public void afficherClient(){
+		this.controler.afficherClient();
+	}
+	private Button quitterButton;
+	
+	public void quitter(){
+		this.controler.quitter();
+	}
+
+
+	private void createContents(){
+				this.afficherClientButton = new Button(this, SWT.PUSH);
+		thisafficherClientButton.setText("afficherClient");
+		this.afficherClientButton.addListener(SWT.Selection, new Listener() {
+      		public void handleEvent(Event e) {
+        		switch (e.type) {
+        			case SWT.Selection:
+          				afficherClient();
+          				break;
+ 				   }
+			  }
+ 		   });		this.quitterButton = new Button(this, SWT.PUSH);
+		thisquitterButton.setText("quitter");
+		this.quitterButton.addListener(SWT.Selection, new Listener() {
+      		public void handleEvent(Event e) {
+        		switch (e.type) {
+        			case SWT.Selection:
+          				quitter();
+          				break;
+ 				   }
+			  }
+ 		   });
+	}
+}

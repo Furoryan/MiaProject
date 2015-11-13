@@ -7,7 +7,10 @@ Bundle-ClassPath: .,
  bin
 Bundle-Activator: com.mia.miniprojet.mvc2java.generation.Activator
 Export-Package: com.mia.miniproject.mvc2java.generation.view.h1743247081,
- com.mia.miniprojet.mvc2java.generation.model.h1231243794
+ com.mia.miniprojet.mvc2java.generation.controler.h1411334451,
+ com.mia.miniprojet.mvc2java.generation.model.h1231243794,
+ com.mia.miniprojet.mvc2java.generation.model.impl.hn2071212932,
+ com.mia.miniprojet.mvc2java.generation.view.impl.h187822642
 Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",
  com.mia.studio.common;bundle-version="9.0.0",
  com.mia.studio.engine;bundle-version="9.0.0",
@@ -23,8 +26,6 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",
  org.eclipse.uml2.uml,
  org.eclipse.uml2.types,
  com.mia.studio.empty.metamodel;bundle-version="9.0.0",
- com.mia.formation.mvc.metamodel,
- com.mia.studio.empty.metamodel;bundle-version="9.0.0",
- com.mia.studio.empty.metamodel;bundle-version="9.0.0"
+ com.mia.formation.mvc.metamodel
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy

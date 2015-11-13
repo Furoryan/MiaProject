@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <launcher name="com.mia.miniprojet.mvc2java.generation-GenerateViewImpl">
+    <source directory="file:/home/flo/M2ALMA/MDE/Eclipse/workspace">
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/BanqueView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/ClientView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/CompteView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/OperationView.java"
+        status="modified" fileEncoding="UTF-8"/>
+    </source>
+  </launcher>
+</history>

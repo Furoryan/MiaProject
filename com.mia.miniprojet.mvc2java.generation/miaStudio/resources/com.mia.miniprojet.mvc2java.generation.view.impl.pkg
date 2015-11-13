@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniprojet.mvc2java.generation.view.impl" METAMODEL="MVC" NUMBER="6"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCENARIO NAME="GenerateViewImpl" VISIBILITY="public" META_OBJECT="View" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniprojet.mvc2java.generation.view.impl" META_OBJECT="View" CATEGORY="default" NAME="uiView" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="createButton" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+		this.[[name]]Button = new Button(grpButtons, SWT.NONE);
+		this.[[name]]Button.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, true, 1, 1));
+		this.[[name]]Button.setText("[[name]]");
+		this.[[name]]Button.addSelectionListener(new SelectionAdapter(){
+		        public void widgetSelected(SelectionEvent event)
+		        {
+		          [[name]]();
+		        }
+		      });
+ 
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="methodDeclaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	private Button [[name]]Button;
+	
+	public void [[name]](){
+		this.controler.[[name]]();
+	}
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="actionsDeclaration" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+[[actions.methodDeclaration]]
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="actionsDeclaration$Precondition" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getActions().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<SCRIPT NAME="uiView" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.I[[rawName]]Controler;
+import com.mia.banque.ui.view.I[[name]];
+import com.mia.banque.model.I[[rawName]];
+import com.mia.banque.model.impl.[[rawName]];
+
+public class [[name]] extends Shell implements I[[name]] {
+	private I[[rawName]]Controler controler;
+	private I[[rawName]] model;
+	
+	public [[name]](Display d, I[[rawName]]Controler ctrl, I[[rawName]] mdl){
+		super(d);
+		this.controler = ctrl;
+		this.model = mdl;
+		this.createContents();
+	}
+	
+[[actionsDeclaration]]
+
+	private void createContents(){
+		Group grpButtons = new Group(this, SWT.NONE);
+		grpButtons.setLayout(new GridLayout(2, false));
+		grpButtons.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
+[[actions.createButton]]
+	}
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="uiView$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/view/swt/[[name]].java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

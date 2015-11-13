@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
 <fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
 <fullyQualifiedTypeName name="ui.Action"/>
+<fullyQualifiedTypeName name="com.mia.banque.model.impl.Banque"/>
 </qualifiedTypeNameHistroy>

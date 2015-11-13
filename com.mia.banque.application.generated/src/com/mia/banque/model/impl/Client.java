@@ -5,7 +5,7 @@ import com.mia.banque.model.*;
 import java.util.List;
 import java.util.ArrayList;
 
-class Client implements IClient {
+public class Client implements IClient {
 	protected String Nom;
 	protected String Prenom;
 	protected String Adresse;

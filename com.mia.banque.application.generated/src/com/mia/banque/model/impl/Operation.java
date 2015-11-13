@@ -5,7 +5,7 @@ import com.mia.banque.model.*;
 import java.util.List;
 import java.util.ArrayList;
 
-class Operation implements IOperation {
+public class Operation implements IOperation {
 	protected String Numero;
 	protected String Montant;
 

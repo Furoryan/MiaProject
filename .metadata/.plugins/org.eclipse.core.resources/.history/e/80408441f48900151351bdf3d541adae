@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniprojet.mvc2java.generation.controler" METAMODEL="MVC" NUMBER="6"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.1.0"/>
+	<SCENARIO NAME="generateControlerInterfaces" VISIBILITY="public" META_OBJECT="View" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.view" META_OBJECT="View" CATEGORY="default" NAME="uiViewInterface" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="ImethodDeclaration" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void [[name]]();
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="IactionsDeclaration" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+[[actions.ImethodDeclaration]]
+]]></TEXT>
+		<PROPERTY NAME="Precondition"/>
+	</SCRIPT>
+	<MACRO_CONDITION NAME="IactionsDeclaration$Precondition" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+return current.getActions().size() > 0;
+]]></TEXT>
+	</MACRO_CONDITION>
+	<TEXT_MACRO NAME="rawName1" META_OBJECT="View" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+return current.getName().replace("View", "");
+]]></TEXT>
+	</TEXT_MACRO>
+	<SCRIPT NAME="uiControlerInterface" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="public">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.controler;
+
+public interface I[[rawName]]Controler {
+	
+	public void initView();
+	
+[[IactionsDeclaration]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="uiControlerInterface$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/controler/I[[rawName]]Controler.java
+]]></TEXT>
+	</SCRIPT>
+</PACKAGE>

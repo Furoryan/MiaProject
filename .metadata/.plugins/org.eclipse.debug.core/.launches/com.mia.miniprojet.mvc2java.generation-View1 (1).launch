@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.mia.studio.generation.core.launch">
+<stringAttribute key="applicableType" value="View"/>
+<stringAttribute key="bundleSymbolicName" value="com.mia.miniprojet.mvc2java.generation"/>
+<booleanAttribute key="generateOnScreen" value="true"/>
+<booleanAttribute key="generateTraces" value="true"/>
+<stringAttribute key="packageName" value="com.mia.miniproject.mvc2java.generation.view"/>
+<stringAttribute key="scenarioMetaObject" value="View"/>
+<stringAttribute key="scenarioName" value="View1"/>
+</launchConfiguration>

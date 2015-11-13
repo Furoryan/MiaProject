@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.mia.studio.generation.core.launch">
+<stringAttribute key="applicableType" value="View"/>
+<booleanAttribute key="applyToSubtypes" value="false"/>
+<stringAttribute key="bundleSymbolicName" value="com.mia.miniprojet.mvc2java.generation"/>
+<booleanAttribute key="exportUnusedScripts" value="false"/>
+<booleanAttribute key="exportUsedScripts" value="false"/>
+<booleanAttribute key="generateBeforeWriting" value="false"/>
+<booleanAttribute key="generateIntoFile" value="true"/>
+<booleanAttribute key="generateOnScreen" value="false"/>
+<booleanAttribute key="generateTraces" value="true"/>
+<stringAttribute key="lineSeparator" value="System default"/>
+<stringAttribute key="metamodel" value="MVC"/>
+<stringAttribute key="modelManagerSelectedURI" value="platform:/resource/com.mia.miniprojet.mvc2java.generation/models/banqueApplication.xmi"/>
+<stringAttribute key="outputDirectory" value="platform:/resource/com.mia.banque.application.generated/src"/>
+<booleanAttribute key="outputDirectoryAsSource" value="true"/>
+<listAttribute key="outputDirectoryHistory">
+<listEntry value="platform:/resource/com.mia.banque.application.generated/src"/>
+<listEntry value="file:/home/flo/M2ALMA/MDE/Eclipse/workspace"/>
+</listAttribute>
+<booleanAttribute key="overwriteOnlyWhenModified" value="false"/>
+<stringAttribute key="packageName" value="com.mia.miniprojet.mvc2java.generation.view.impl"/>
+<booleanAttribute key="refreshGenerationDirectory" value="true"/>
+<booleanAttribute key="refreshModelBeforeGeneration" value="false"/>
+<booleanAttribute key="refreshModelBeforeGenerationAllowed" value="true"/>
+<stringAttribute key="scenarioMetaObject" value="View"/>
+<stringAttribute key="scenarioName" value="GenerateViewImpl"/>
+<booleanAttribute key="selectionWithModelManager" value="true"/>
+<stringAttribute key="sourceDirectory" value="file:/home/flo/M2ALMA/MDE/Eclipse/workspace"/>
+<listAttribute key="sourceDirectoryHistory">
+<listEntry value="file:/home/flo/M2ALMA/MDE/Eclipse/workspace"/>
+</listAttribute>
+<stringAttribute key="unusedScriptsExportLocation" value="file:/home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/"/>
+<listAttribute key="unusedScriptsExportLocationHistory">
+<listEntry value="file:/home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/"/>
+</listAttribute>
+<stringAttribute key="usedScriptsExportLocation" value="file:/home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/"/>
+<listAttribute key="usedScriptsExportLocationHistory">
+<listEntry value="file:/home/flo/M2ALMA/MDE/Eclipse/com.mia.studio.ide-9.1.1.gtk.x86_64/"/>
+</listAttribute>
+<booleanAttribute key="workspaceOnly" value="false"/>
+</launchConfiguration>

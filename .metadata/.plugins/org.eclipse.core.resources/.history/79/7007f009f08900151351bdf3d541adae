@@ -1,0 +1,28 @@
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.ICompteControler;
+import com.mia.banque.ui.view.ICompteView;
+import com.mia.banque.model.ICompte;
+import com.mia.banque.model.impl.Compte;
+
+public class CompteView extends Shell implements ICompteView {
+	private ICompteControler controler;
+	private Compte model;
+	
+	public CompteView(Display d, ICompteControler ctrl, Compte mdl){
+		super(d);
+		this.controler = ctrl;
+		this.model = mdl;
+	}
+	
+	public void afficherOperation(){
+	}
+	public void quitter(){
+	}
+
+}
