@@ -1,8 +1,0 @@
-package com.mia.banque.model;
-
-public interface IBanque {
-
-	public List<IClient> getClients();
-	public vois setClients(List<IClient arg);
-
-}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.mia.miniprojet.mvc2java.generation/miaStudio/resources/com.mia.miniproject.mvc2java.generation.view.pkg&apos; to &apos;com.mia.miniprojet.mvc2java.generation.view.pkg&apos;" description="Rename resource &apos;com.mia.miniproject.mvc2java.generation.view.pkg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="miaStudio/resources/com.mia.miniproject.mvc2java.generation.view.pkg" name="com.mia.miniprojet.mvc2java.generation.view.pkg" stamp="1447406840996" updateReferences="true"/>
+</session>

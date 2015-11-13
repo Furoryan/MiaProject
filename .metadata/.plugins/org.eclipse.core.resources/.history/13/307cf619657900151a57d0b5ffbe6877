@@ -1,5 +1,0 @@
-package com.mia.banque.model.impl;
-
-class Banque implements IBanque {
-	
-}
