@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <launcher name="org.formation.generation-shellGeneration (6)">
+    <source directory="file:/home/flo/M2ALMA/MDSE/Eclipse/workspace">
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/BanqueView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/ClientView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/CompteView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/OperationView.java"
+        status="modified" fileEncoding="UTF-8"/>
+    </source>
+  </launcher>
+</history>

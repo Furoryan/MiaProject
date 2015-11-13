@@ -1,0 +1,22 @@
+package com.mia.banque.model.impl;
+
+import com.mia.banque.model.*;
+
+import java.util.List;
+
+class Banque implements IBanque {
+
+
+
+
+	protected List<IClient> Clients;
+
+
+	public List<IClient> getClients(){
+		return this.Clients;
+	}
+	public void setClients(List<IClient> arg){
+		this.Clients = arg;
+	}
+
+}

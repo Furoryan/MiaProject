@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.mia.studio.generation.core.unitLaunch">
+<stringAttribute key="applicableType" value="View"/>
+<stringAttribute key="bundleSymbolicName" value="org.formation.generation"/>
+<booleanAttribute key="generateOnScreen" value="true"/>
+<booleanAttribute key="generateTraces" value="true"/>
+<stringAttribute key="generationUnitDataID" value="b08739e0-f3c8-4fce-b684-4741c038d886"/>
+<stringAttribute key="packageName" value="org.formation.generation.swt"/>
+</launchConfiguration>

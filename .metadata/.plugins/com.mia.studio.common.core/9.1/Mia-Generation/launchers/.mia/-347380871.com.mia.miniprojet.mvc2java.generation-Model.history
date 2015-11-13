@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <launcher name="com.mia.miniprojet.mvc2java.generation-Model">
+    <source directory="file:/home/flo/M2ALMA/MDE/Eclipse/workspace">
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/IBanque.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/impl/Banque.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/IClient.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/impl/Client.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/ICompte.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/impl/Compte.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/IOperation.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/model/impl/Operation.java"
+        status="modified" fileEncoding="UTF-8"/>
+    </source>
+  </launcher>
+</history>

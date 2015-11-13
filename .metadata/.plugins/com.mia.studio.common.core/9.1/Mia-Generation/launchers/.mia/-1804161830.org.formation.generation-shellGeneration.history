@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <launcher name="org.formation.generation-shellGeneration">
+    <source directory="file:/home/flo/M2ALMA/MDSE/Eclipse/workspace">
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/com/mia/formation/generation/ui/BanqueView.java"
+        status="new" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/com/mia/formation/generation/ui/ClientView.java"
+        status="new" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/com/mia/formation/generation/ui/CompteView.java"
+        status="new" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/com/mia/formation/generation/ui/OperationView.java"
+        status="new" fileEncoding="UTF-8"/>
+      <notRegenerated file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/BanqueView.java"/>
+      <notRegenerated file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/OperationView.java"/>
+      <notRegenerated file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/ClientView.java"/>
+      <notRegenerated file="/home/flo/M2ALMA/MDSE/Eclipse/workspace/com.mia.formation.generation.ui/src/com/mia/formation/generation/ui/CompteView.java"/>
+    </source>
+  </launcher>
+</history>

@@ -1,0 +1,8 @@
+package com.mia.banque.model;
+
+public interface Compte {
+	public String getNumero();
+public void setNumero(String arg);
+
+	
+}

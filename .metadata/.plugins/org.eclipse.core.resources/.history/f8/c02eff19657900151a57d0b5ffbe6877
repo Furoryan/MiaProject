@@ -1,0 +1,11 @@
+package com.mia.banque.model.impl;
+
+class Compte implements ICompte {
+	public String getNumero(){
+	return this.Numero;
+}
+public void setNumero(String arg){
+	this.Numero = arg;
+}
+
+}

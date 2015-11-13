@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;com.mia.miniprojet.mvc2java.generation&apos;&#x0A;- Original project: &apos;com.mia.miniprojet.mvc2java.generation&apos;&#x0A;- Original element: &apos;com.mia.miniprojet.mvc2java.generation.model.pkg&apos;" description="Delete element" element1="miaStudio/resources/com.mia.miniprojet.mvc2java.generation.model.pkg" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1445589509406" subPackages="false" version="1.0"/>
+</session>

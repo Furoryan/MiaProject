@@ -1,0 +1,11 @@
+package com.mia.banque.model.impl;
+
+import com.mia.banque.model.*;
+
+class Banque implements IBanque {
+
+
+	public List<IClient> getClients();
+	public vois setClients(List<IClient arg);
+
+}

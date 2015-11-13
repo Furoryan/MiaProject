@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;org.formation.generation/models/Banque.ui&apos; to &apos;Banque.ui.xmi&apos;" description="Rename resource &apos;Banque.ui&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="models/Banque.ui" name="Banque.ui.xmi" stamp="1445588597739" updateReferences="true"/>
+</session>

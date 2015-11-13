@@ -1,0 +1,13 @@
+package com.mia.banque.ui.view.swt;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import com.mia.banque.ui.controler.ICompteControler;
+import com.mia.banque.ui.view.ICompteView;
+import com.mia.banque.model.ICompte;
+
+public class CompteView extends Shell implements ICompteView {
+}

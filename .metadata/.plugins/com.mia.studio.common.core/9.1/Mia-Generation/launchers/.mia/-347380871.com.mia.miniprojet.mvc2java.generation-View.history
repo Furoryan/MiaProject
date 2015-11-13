@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <launcher name="com.mia.miniprojet.mvc2java.generation-View">
+    <source directory="file:/home/flo/M2ALMA/MDE/Eclipse/workspace">
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/IBanqueView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/IBanqueControler.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/BanqueView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/IClientView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/IClientControler.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/ClientView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/ICompteView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/ICompteControler.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/CompteView.java"
+        status="modified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/IOperationView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/IOperationControler.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/flo/M2ALMA/MDE/Eclipse/workspace/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/OperationView.java"
+        status="modified" fileEncoding="UTF-8"/>
+    </source>
+  </launcher>
+</history>

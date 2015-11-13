@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="726" localization="OSGI-INF/l10n/bundle" name="com.mia.banque.application.reference" project="com.mia.banque.application.reference" provider="Mia-Software"/>
+	<bundle bundleID="729" class="com.mia.miniprojet.mvc2java.generation.Activator" localization="OSGI-INF/l10n/bundle" name="com.mia.miniprojet.mvc2java.generation" project="com.mia.miniprojet.mvc2java.generation">
+		<library name="."/>
+		<library name="bin"/>
+	</bundle>
+	<bundle bundleID="727" localization="OSGI-INF/l10n/bundle" name="Tests" project="com.mia.banque.application.tests" provider="MIA"/>
+	<bundle bundleID="725" class="com.mia.formation.generation.ui.Activator" localization="OSGI-INF/l10n/bundle" name="Ui" project="com.mia.formation.generation.ui" provider="MIA"/>
+	<bundle bundleID="728" class="com.mia.banque.application.generated.Activator" localization="OSGI-INF/l10n/bundle" name="Generated" project="com.mia.banque.application.generated" provider="MIA"/>
+	<bundle bundleID="724" class="org.formation.generation.Activator" localization="OSGI-INF/l10n/bundle" name="org.formation.generation" project="org.formation.generation">
+		<library name="."/>
+		<library name="bin"/>
+	</bundle>
+</map>

@@ -1,0 +1,16 @@
+package com.mia.banque.model;
+
+import java.util.List;
+
+public interface IClient {
+	public String getNom();
+	public void setNom(String arg);
+	public String getPrenom();
+	public void setPrenom(String arg);
+	public String getAdresse();
+	public void setAdresse(String arg);
+
+	public List<ICompte> getComptes();
+	public void setComptes(List<ICompte> arg);
+
+}
